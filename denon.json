@@ -1,0 +1,40 @@
+{
+  "scripts": {
+    "start": {
+      "cmd": "app.ts",
+      "desc": "Starts application",
+      "allow": [
+        "read",
+        "net"
+      ],
+      "watch": true
+    },
+    "bundle": {
+      "cmd": "bundle.ts",
+      "desc": "bundling my files, for the html web page",
+      "allow":[
+        "read",
+        "write",
+        "net"
+      ],
+      "watch": false,
+      "unstable": true
+    },
+    "compile": {
+      "cmd": "compile.ts",
+      "desc": "compiling the ts source and creating map files",
+      "allow":[
+        "read",
+        "write",
+        "net"
+      ],
+      "watch": false,
+      "unstable": true
+    },
+    "clear": {
+      "cmd": "deno run --reload app.ts",
+      "desc": "compiling the ts source and creating map files",
+      "watch": false
+    }
+  }
+}
